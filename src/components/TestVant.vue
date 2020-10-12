@@ -41,6 +41,16 @@
         <br>
         轻提示
       </div>
+      <div class="box" @click="toVantPullRefresh">
+        VantPullRefresh
+        <br>
+        下拉加载
+      </div>
+      <div class="box" @click="toVantList">
+        VantList
+        <br>
+        上拉加载
+      </div>
     </div>
   </div>
 </template>
@@ -74,6 +84,12 @@
       },
       toVantToast(){
         this.$router.push('/vanttoast')
+      },
+      toVantPullRefresh() {
+        this.$router.push('/vantpullrefresh')
+      },
+      toVantList(){
+        this.$router.push('/vantlist')
       }
     }
   }

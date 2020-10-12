@@ -10,6 +10,8 @@ const VantLayout = () => import('../view/layout/VantLayout')
 const VantPopup = () => import('../view/popup/VantPopup')
 const VantStyle = () => import('../view/style/VantStyle')
 const VantToast = () => import('../view/toast/VantToast')
+const VantPullRefresh = () => import('../view/pullrefresh/VantPullRefresh')
+const VantList = () => import('../view/list/VantList')
 
 Vue.use(VueRouter)
 
@@ -54,6 +56,14 @@ const routes = [
   {
     path: '/vanttoast',
     component: VantToast
+  },
+  {
+    path: '/vantpullrefresh',
+    component: VantPullRefresh
+  },
+  {
+    path: '/vantlist',
+    component: VantList
   }
 ]
 

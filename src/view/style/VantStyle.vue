@@ -38,27 +38,27 @@
     <div class="big-box">
       <!-- 淡入 -->
       <transition name="van-fade" duration="300">
-        <div v-show="visible" class="blue">Fade</div>
+        <div v-show="visible" class="blue size">Fade</div>
       </transition>
 
       <!-- 上滑进入 -->
       <transition name="van-slide-up" duration="300">
-        <div v-show="visible" class="black">Slide Up</div>
+        <div v-show="visible" class="black size">Slide Up</div>
       </transition>
 
       <!-- 下滑进入 -->
       <transition name="van-slide-down" duration="300">
-        <div v-show="visible" class="red">Slide Down</div>
+        <div v-show="visible" class="red size">Slide Down</div>
       </transition>
 
       <!-- 左滑进入 -->
       <transition name="van-slide-left" duration="300">
-        <div v-show="visible" class="yellow">Slide Left</div>
+        <div v-show="visible" class="yellow size">Slide Left</div>
       </transition>
 
       <!-- 右滑进入 -->
       <transition name="van-slide-right" duration="300">
-        <div v-show="visible" class="green">Slide Right</div>
+        <div v-show="visible" class="green size">Slide Right</div>
       </transition>
     </div>
   </div>
@@ -93,34 +93,24 @@
   .big-box{
     margin: 0 auto;
   }
-  .blue{
+  .size{
     width: 150px;
-    height: 50px;
+    height: 100px;
+    margin: 0 auto 10px;
+  }
+  .blue{
     background-color: blue;
-    margin: 0 auto;
   }
   .black{
-    width: 150px;
-    height: 50px;
     background-color: black;
-    margin: 0 auto;
   }
   .red{
-    width: 150px;
-    height: 50px;
     background-color: red;
-    margin: 0 auto;
   }
   .yellow{
-    width: 150px;
-    height: 50px;
     background-color: yellow;
-    margin: 0 auto;
   }
   .green{
-    width: 150px;
-    height: 50px;
     background-color: green;
-    margin: 0 auto;
   }
 </style>

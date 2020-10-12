@@ -3,8 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <style>
+    .box{
+      width: 50px;
+      height: 50px;
+      display: inline-block;
+      background-color: lightpink;
+    }
+    /*.box:nth-child(n+4) {*/
+    /*  background-color: lightgreen;*/
+    /*}*/
+    /*p,.box:nth-of-type(4) {*/
+    /*  background-color: lawngreen;*/
+    /*}*/
+    p:only-child {
+      background-color: lightseagreen;
+    }
+  </style>
 </head>
 <body>
-
+<div class="father">
+  <div class="box">
+    <div>
+      <p>文字1</p>
+      <p>文字2</p>
+      <p>文字3</p>
+      <p>文字4</p>
+      <p>文字5</p>
+    </div>
+  </div>
+  <div class="box">
+    <p>文字文字</p>
+  </div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+</div>
 </body>
 </html>
