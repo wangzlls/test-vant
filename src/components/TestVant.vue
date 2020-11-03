@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>
+    <div class="container">
       <div  class="box" @click="toVantButton">
         VantButton
         <br>
@@ -51,6 +51,21 @@
         <br>
         上拉加载
       </div>
+      <div class="box" @click="toVantSticky">
+        VantSticky
+        <br>
+        黏贴效果
+      </div>
+      <div class="box" @click="toVantCanlendar">
+        VantCanlendar
+        <br>
+        日历
+      </div>
+      <div class="box" @click="toRound">
+        Round
+        <br>
+        抽奖转圈
+      </div>
     </div>
   </div>
 </template>
@@ -90,12 +105,25 @@
       },
       toVantList(){
         this.$router.push('/vantlist')
+      },
+      toVantSticky() {
+        this.$router.push('/vantsticky')
+      },
+      toVantCanlendar() {
+        this.$router.push('/vantcanlendar')
+      },
+      toRound() {
+        this.$router.push('/round')
       }
     }
   }
 </script>
 
 <style scoped>
+  .container {
+    position: relative;
+    width: 100%;
+  }
   .box{
     width: 100px;
     line-height: 30px;
@@ -103,10 +131,12 @@
     background-color: greenyellow;
     text-align: center;
     display: inline-block;
-    margin-right: 95px;
   }
   .box:nth-child(even){
-    margin-right: 0;
+    float: right;
+  }
+  .box:nth-child(odd){
+    float: left;
   }
   .box:nth-child(n+3) {
     margin-top: 50px;

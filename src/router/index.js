@@ -12,6 +12,9 @@ const VantStyle = () => import('../view/style/VantStyle')
 const VantToast = () => import('../view/toast/VantToast')
 const VantPullRefresh = () => import('../view/pullrefresh/VantPullRefresh')
 const VantList = () => import('../view/list/VantList')
+const VantSticky = () => import('../view/sticky/Sticky')
+const VantCanlendar = () => import('../view/canlendar/VantCanlendar')
+const Round  = () => import('../view/testRound/Test')
 
 Vue.use(VueRouter)
 
@@ -64,6 +67,18 @@ const routes = [
   {
     path: '/vantlist',
     component: VantList
+  },
+  {
+    path: '/vantsticky',
+    component: VantSticky
+  },
+  {
+    path: '/vantcanlendar',
+    component: VantCanlendar
+  },
+  {
+    path: '/round',
+    component: Round
   }
 ]
 
